@@ -181,8 +181,9 @@ class Customer implements Runnable
     @Override
     public void run() 
     {
+        int n =11;
         // Time to call all implemented sub-methods
-        sleeps();
+        sleeps(n);
 
         System.out.printf("\nCustomer %d enters the system\n", id);
 
@@ -191,30 +192,30 @@ class Customer implements Runnable
         if (!Thread.currentThread().isInterrupted())
         {
             getProduceSection();
-
-            sleeps();
+            n = 21;
+            sleeps(n);
 
             getGeneralSection();
-
-            sleeps();
+            n=31;
+            sleeps(n);
 
             getFrozenSection();
-
-            sleeps();
+            n=61;
+            sleeps(n);
 
             getCashierSection();
-
-            sleeps();
+            n=21;
+            sleeps(n);
 
             exitGroceryStore();
         }
     }
 
-    public void sleeps()
+    public void sleeps(int n)
     {
         try {
-        double randSleepTime = Math.random();
-        long miliSleepTime = (long) (randSleepTime * 1000);
+        double randSleepTime = Math.floor(Math.random() * n);
+        long miliSleepTime = (long) (randSleepTime * 100);
         Thread.sleep(miliSleepTime);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -231,6 +232,7 @@ public class GroceryStore
     // Shared semaphores, mutexes, variables
     // Create Customer objects using for-loop
     // Call start() method
+    static boolean continueLoop = true;
 
     static final int OUTSIDE_WAIT = 40;
     static final int PRODUCE_WAIT = 20;
@@ -272,7 +274,9 @@ public class GroceryStore
 
         List<Thread> customerThreads = new ArrayList<>();
 
-        for (int i =0; i< numCustomers; i++) 
+        // static boolean continueLoop = true;
+
+        for (int i =0; i< numCustomers && continueLoop; i++) 
         {
             // Insert here
             if (elapsedTime < sleepTime)
@@ -290,6 +294,7 @@ public class GroceryStore
             else
             {
                 System.out.println("Grocery Store is closed. No new customers allowed.\n");
+                continueLoop = false;
                 break;
             }
 
