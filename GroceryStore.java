@@ -1,9 +1,15 @@
-//////////////////////////
-// Name : Jordi Castro  //
-// IDUA : 010974536     //
-//////////////////////////
+/////////////////////////////
+// OS PA2 : Grocery Store  //
+// Author : Jordi Castro   //
+// IDUA   : 010974536      //
+/////////////////////////////
 
 // imports
+//import java.util.Random;
+import java.util.concurrent.Semaphore;
+import java.util.List;
+import java.util.ArrayList;
+
 
 
 // class definitions
@@ -12,57 +18,210 @@ class Customer implements Runnable
 {
     // Class attributes here, including:
     // id
+    private int id;
+    private static int numInWait, numInProduce, numInGeneral, numInFrozen, numInRegisters;
+    
     // Semaphores, mutexes for each section
+    private Semaphore swait, sproduce, sgeneral, sfrozen, sregisters;
+    private Semaphore mwait, mproduce, mgeneral, mfrozen, mregisters;
     // variables for counting customers
 
     // Class constructor
-    Customer() 
+    Customer(int id, Semaphore swait, Semaphore sproduce, Semaphore sgeneral, Semaphore sfrozen, Semaphore sregisters, Semaphore mwait, Semaphore mproduce, Semaphore mgeneral, Semaphore mfrozen, Semaphore mregisters) 
     {
         // Insert here
+        this.id = id;
+        this.swait = swait;
+        this.sproduce = sproduce;
+        this.sgeneral = sgeneral;
+        this.sfrozen = sfrozen;
+        this.sregisters = sregisters;
+        this.mwait = mwait;
+        this.mproduce = mproduce;
+        this.mfrozen = mfrozen;
+        this.mgeneral = mgeneral;
+        this.mregisters = mregisters;
+        numInWait =0;
+        numInProduce =0;
+        numInFrozen =0;
+        numInRegisters = 0;
     }
 
     // Get waiting room
     private void getWaitingRoom() 
     {
         // Insert here
+        if (numInWait >= GroceryStore.OUTSIDE_WAIT) 
+        {
+            mwait.release();
+            System.out.printf("\t\tCustomer %d leaves! there are no spots outside of the store!\n", id);
+        
+        } else 
+        {
+            try {
+                mwait.acquire();
+                swait.acquire();
+
+                numInWait++;
+                System.out.printf("\tCustomer %d enters the waiting area and is waiting to enter the grocery store. there are %d customers waiting\n", id, numInWait);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                swait.release();
+                mwait.release();
+            }
+        }
+        
     }
 
     // Produce section
     private void getProduceSection() 
     {
         // Insert Here
+        try {
+            sproduce.acquire();
+            mproduce.acquire();
+            mwait.acquire();
+
+            numInProduce++;
+            numInWait--;
+
+            System.out.printf("\t\tCustomer %d enters the produce section. there are %d customers looking at produce\n", id, numInProduce);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            mproduce.release();
+            mwait.release();
+            swait.release();
+        }
     }
 
     // General Grocery Section
     private void getGeneralSection() 
     {
         // Insert Here
+        try {
+            sgeneral.acquire();
+            mgeneral.acquire();
+            mproduce.acquire();
+
+            numInGeneral++;
+            numInProduce--;
+            System.out.printf("\t\t\tCustomer %d enters the general section. there are %d customers looking at general groceries.\n", id, numInGeneral);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            mgeneral.release();
+            mproduce.release();
+            sproduce.release();
+        }
     }
 
     // Frozen Section
     private void getFrozenSection() 
     {
         // Insert Here
+        try {
+            sfrozen.acquire();
+            mfrozen.acquire();
+            mgeneral.acquire();
+
+            numInFrozen++;
+            numInGeneral--;
+            System.out.printf("\t\t\t\tCustomer %d enters the frozen section. there are %d customers looking at frozen foods.\n", id, numInFrozen);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            mfrozen.release();
+            mgeneral.release();
+            sgeneral.release();
+        }
     }
 
     // Cashier Section
     private void getCashierSection()
     {
         // Insert Here
+        try {
+            sregisters.acquire();
+            mregisters.acquire();
+            mfrozen.acquire();
+
+            numInRegisters++;
+            numInFrozen--;
+            System.out.printf("\t\t\t\tCustomer %d enters CHECKOUT AREA. there are %d customers checking out.\n", id, numInRegisters);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            mregisters.release();
+            mfrozen.release();
+            sfrozen.release();
+        }
     }
 
     // Exit Grocery Store
     private void exitGroceryStore() 
     {
         // Insert Here
+        try {
+            mregisters.acquire();
+            numInRegisters--;
+            System.out.printf("\t\t\t\t\t Customer %d exits the system.\n", id);
+        } catch (InterruptedException e) 
+        {
+            e.printStackTrace();
+        } finally {
+            mregisters.release();
+            sregisters.release();
+        }
     }
 
     // Implement run() method
+    @Override
     public void run() 
     {
         // Time to call all implemented sub-methods
+        sleeps();
+
+        System.out.printf("\nCustomer %d enters the system\n", id);
+
+        getWaitingRoom();
+
+        if (!Thread.currentThread().isInterrupted())
+        {
+            getProduceSection();
+
+            sleeps();
+
+            getGeneralSection();
+
+            sleeps();
+
+            getFrozenSection();
+
+            sleeps();
+
+            getCashierSection();
+
+            sleeps();
+
+            exitGroceryStore();
+        }
+    }
+
+    public void sleeps()
+    {
+        try {
+        double randSleepTime = Math.random();
+        long miliSleepTime = (long) (randSleepTime * 1000);
+        Thread.sleep(miliSleepTime);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
+
 
 // Grocery Store Class
 public class GroceryStore 
@@ -72,11 +231,69 @@ public class GroceryStore
     // Shared semaphores, mutexes, variables
     // Create Customer objects using for-loop
     // Call start() method
+
+    static final int OUTSIDE_WAIT = 40;
+    static final int PRODUCE_WAIT = 20;
+    static final int GROCERY_WAIT = 25;
+    static final int FROZEN_WAIT = 30;
+    static final int REGISTERS_WAIT = 10;
+    static int elapsedTime = 0;
+
+
     public static void main (String args[])
     {
-        for (int i =0; i<-1; i++) 
+
+        // default values
+        int sleepTime = 100;
+        int numCustomers = 50;
+
+        Semaphore swait = new Semaphore(OUTSIDE_WAIT); // outside wait, max 40
+        Semaphore sproduce = new Semaphore(PRODUCE_WAIT); // produce wait, max 20
+        Semaphore sgeneral = new Semaphore(GROCERY_WAIT); // general grocery wait, max 25
+        Semaphore sfrozen = new Semaphore(FROZEN_WAIT); // frozen section wait, max 30
+        Semaphore sregisters = new Semaphore(REGISTERS_WAIT); // cash registers wait, max 10
+        Semaphore mwait = new Semaphore(1);
+        Semaphore mproduce = new Semaphore(1);
+        Semaphore mgeneral = new Semaphore(1);
+        Semaphore mfrozen = new Semaphore(1);
+        Semaphore mregisters = new Semaphore(1);
+
+        if (args.length == 2)
+        {
+            sleepTime = Integer.parseInt(args[0]);
+            numCustomers = Integer.parseInt(args[1]);
+        }
+        else
+        {
+
+        }
+
+        long startTime = System.currentTimeMillis();
+
+        List<Thread> customerThreads = new ArrayList<>();
+
+        for (int i =0; i< numCustomers; i++) 
         {
             // Insert here
+            if (elapsedTime < sleepTime)
+            {
+                Customer myCustomer = new Customer(i, swait, sproduce, sgeneral, sfrozen, sregisters, mwait, mproduce, mgeneral, mfrozen, mregisters);
+
+                Thread c = new Thread(myCustomer);
+
+                c.start();
+
+                //myCustomer.setThread(c);
+
+                customerThreads.add(c);
+            }
+            else
+            {
+                System.out.println("Grocery Store is closed. No new customers allowed.\n");
+                break;
+            }
+
+            elapsedTime = (int) (System.currentTimeMillis() - startTime);
         }
     }
     // Sleep the program thread using Thread.sleep()
@@ -103,7 +320,7 @@ public class GroceryStore
         2. the number of customers
             
 
-    store limits the number of people allowed inside ach section
+    store limits the number of people allowed inside each section
 
 
 
