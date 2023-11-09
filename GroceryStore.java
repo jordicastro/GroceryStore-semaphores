@@ -78,22 +78,36 @@ class Customer implements Runnable
     private void getProduceSection() 
     {
         // Insert Here
-        try {
-            sproduce.acquire();
-            mproduce.acquire();
-            mwait.acquire();
+        if (numInProduce >= GroceryStore.PRODUCE_WAIT)
+        {
+            System.out.printf("\t\tPRODUCE has %d out of %d people. customer %d WILL RETURN in 2 seconds\n", numInProduce, GroceryStore.PRODUCE_WAIT, id);
+            try {
+                Thread.sleep(2000);
+                getProduceSection();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+        }
+        else
+        {
+            try {
+                sproduce.acquire();
+                mproduce.acquire();
+                mwait.acquire();
 
-            numInProduce++;
-            numInWait--;
+                numInProduce++;
+                numInWait--;
 
-            System.out.printf("\t\tCustomer %d enters the produce section. there are %d customers looking at produce\n", id, numInProduce);
+                System.out.printf("\t\tCustomer %d enters the produce section. there are %d customers looking at produce\n", id, numInProduce);
 
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            mproduce.release();
-            mwait.release();
-            swait.release();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                mproduce.release();
+                mwait.release();
+                swait.release();
+            }
         }
     }
 
@@ -101,20 +115,33 @@ class Customer implements Runnable
     private void getGeneralSection() 
     {
         // Insert Here
-        try {
-            sgeneral.acquire();
-            mgeneral.acquire();
-            mproduce.acquire();
+        if (numInGeneral >= GroceryStore.GROCERY_WAIT)
+        {
+            System.out.printf("\t\tGENERAL SECTION has %d out of %d people. customer %d WILL RETURN in 2 seconds\n", numInGeneral, GroceryStore.GROCERY_WAIT, id);
+            try {
+                Thread.sleep(2000);
+                getGeneralSection();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            try {
+                sgeneral.acquire();
+                mgeneral.acquire();
+                mproduce.acquire();
 
-            numInGeneral++;
-            numInProduce--;
-            System.out.printf("\t\t\tCustomer %d enters the general section. there are %d customers looking at general groceries.\n", id, numInGeneral);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            mgeneral.release();
-            mproduce.release();
-            sproduce.release();
+                numInGeneral++;
+                numInProduce--;
+                System.out.printf("\t\t\tCustomer %d enters the general section. there are %d customers looking at general groceries.\n", id, numInGeneral);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                mgeneral.release();
+                mproduce.release();
+                sproduce.release();
+            }
         }
     }
 
@@ -122,20 +149,33 @@ class Customer implements Runnable
     private void getFrozenSection() 
     {
         // Insert Here
-        try {
-            sfrozen.acquire();
-            mfrozen.acquire();
-            mgeneral.acquire();
+        if (numInFrozen >= GroceryStore.FROZEN_WAIT)
+        {
+            System.out.printf("\t\tFROZEN SECTION has %d out of %d people. customer %d WILL RETURN in 2 seconds\n", numInFrozen, GroceryStore.FROZEN_WAIT, id);
+            try {
+                Thread.sleep(2000);
+                getFrozenSection();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            try {
+                sfrozen.acquire();
+                mfrozen.acquire();
+                mgeneral.acquire();
 
-            numInFrozen++;
-            numInGeneral--;
-            System.out.printf("\t\t\t\tCustomer %d enters the frozen section. there are %d customers looking at frozen foods.\n", id, numInFrozen);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            mfrozen.release();
-            mgeneral.release();
-            sgeneral.release();
+                numInFrozen++;
+                numInGeneral--;
+                System.out.printf("\t\t\t\tCustomer %d enters the frozen section. there are %d customers looking at frozen foods.\n", id, numInFrozen);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                mfrozen.release();
+                mgeneral.release();
+                sgeneral.release();
+            }
         }
     }
 
@@ -143,20 +183,33 @@ class Customer implements Runnable
     private void getCashierSection()
     {
         // Insert Here
-        try {
-            sregisters.acquire();
-            mregisters.acquire();
-            mfrozen.acquire();
+        if (numInRegisters >= GroceryStore.REGISTERS_WAIT)
+        {
+            System.out.printf("\t\tREGISTERS has %d out of %d people. customer %d WILL RETURN in 2 seconds\n", numInRegisters, GroceryStore.REGISTERS_WAIT, id);
+            try {
+                Thread.sleep(2000);
+                getCashierSection();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            try {
+                sregisters.acquire();
+                mregisters.acquire();
+                mfrozen.acquire();
 
-            numInRegisters++;
-            numInFrozen--;
-            System.out.printf("\t\t\t\tCustomer %d enters CHECKOUT AREA. there are %d customers checking out.\n", id, numInRegisters);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            mregisters.release();
-            mfrozen.release();
-            sfrozen.release();
+                numInRegisters++;
+                numInFrozen--;
+                System.out.printf("\t\t\t\tCustomer %d enters CHECKOUT AREA. there are %d customers checking out.\n", id, numInRegisters);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                mregisters.release();
+                mfrozen.release();
+                sfrozen.release();
+            }
         }
     }
 

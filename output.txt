@@ -1,0 +1,419 @@
+Customer 6 enters the system
+
+Customer 14 enters the system
+        Customer 6 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+        Customer 14 enters the waiting area and is waiting to enter the grocery store. there are 2 customers waiting
+                Customer 6 enters the produce section. there are 1 customers looking at produce
+                Customer 14 enters the produce section. there are 2 customers looking at produce
+
+Customer 3 enters the system
+        Customer 3 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 3 enters the produce section. there are 3 customers looking at produce
+
+Customer 41 enters the system
+        Customer 41 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 41 enters the produce section. there are 4 customers looking at produce
+
+Customer 31 enters the system
+        Customer 31 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 31 enters the produce section. there are 5 customers looking at produce
+
+Customer 40 enters the system
+        Customer 40 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 40 enters the produce section. there are 6 customers looking at produce
+
+Customer 10 enters the system
+        Customer 10 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 10 enters the produce section. there are 7 customers looking at produce
+
+Customer 46 enters the system
+        Customer 46 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 46 enters the produce section. there are 8 customers looking at produce
+
+Customer 45 enters the system
+        Customer 45 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 45 enters the produce section. there are 9 customers looking at produce
+
+Customer 28 enters the system
+        Customer 28 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 28 enters the produce section. there are 10 customers looking at produce
+
+Customer 33 enters the system
+        Customer 33 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 33 enters the produce section. there are 11 customers looking at produce
+
+Customer 12 enters the system
+        Customer 12 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 12 enters the produce section. there are 12 customers looking at produce
+                        Customer 3 enters the general section. there are 1 customers looking at general groceries.
+                        Customer 6 enters the general section. there are 2 customers looking at general groceries.
+
+Customer 19 enters the system
+        Customer 19 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 19 enters the produce section. there are 11 customers looking at produce
+
+Customer 32 enters the system
+        Customer 32 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 32 enters the produce section. there are 12 customers looking at produce
+
+Customer 36 enters the system
+        Customer 36 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 36 enters the produce section. there are 13 customers looking at produce
+
+Customer 49 enters the system
+        Customer 49 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 49 enters the produce section. there are 14 customers looking at produce
+                        Customer 28 enters the general section. there are 3 customers looking at general groceries.
+
+Customer 16 enters the system
+        Customer 16 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 16 enters the produce section. there are 14 customers looking at produce
+
+Customer 7 enters the system
+        Customer 7 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 7 enters the produce section. there are 15 customers looking at produce
+
+Customer 21 enters the system
+        Customer 21 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 21 enters the produce section. there are 16 customers looking at produce
+
+Customer 38 enters the system
+        Customer 38 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 38 enters the produce section. there are 17 customers looking at produce
+
+Customer 8 enters the system
+        Customer 8 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+
+Customer 15 enters the system
+        Customer 15 enters the waiting area and is waiting to enter the grocery store. there are 2 customers waiting
+                        Customer 12 enters the general section. there are 4 customers looking at general groceries.
+                Customer 8 enters the produce section. there are 17 customers looking at produce
+                Customer 15 enters the produce section. there are 18 customers looking at produce
+                        Customer 32 enters the general section. there are 5 customers looking at general groceries.
+                        Customer 40 enters the general section. there are 6 customers looking at general groceries.
+
+Customer 1 enters the system
+        Customer 1 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 1 enters the produce section. there are 17 customers looking at produce
+
+Customer 23 enters the system
+        Customer 23 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 23 enters the produce section. there are 18 customers looking at produce
+
+Customer 11 enters the system
+        Customer 11 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 11 enters the produce section. there are 19 customers looking at produce
+
+Customer 9 enters the system
+        Customer 9 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                Customer 9 enters the produce section. there are 20 customers looking at produce
+
+Customer 47 enters the system
+        Customer 47 enters the waiting area and is waiting to enter the grocery store. there are 1 customers waiting
+                PRODUCE has 20 out of 20 people. customer 47 WILL RETURN in 2 seconds
+
+Customer 24 enters the system
+        Customer 24 enters the waiting area and is waiting to enter the grocery store. there are 2 customers waiting
+                PRODUCE has 20 out of 20 people. customer 24 WILL RETURN in 2 seconds
+
+Customer 30 enters the system
+        Customer 30 enters the waiting area and is waiting to enter the grocery store. there are 3 customers waiting
+                PRODUCE has 20 out of 20 people. customer 30 WILL RETURN in 2 seconds
+
+Customer 25 enters the system
+        Customer 25 enters the waiting area and is waiting to enter the grocery store. there are 4 customers waiting
+                PRODUCE has 20 out of 20 people. customer 25 WILL RETURN in 2 seconds
+
+Customer 37 enters the system
+        Customer 37 enters the waiting area and is waiting to enter the grocery store. there are 5 customers waiting
+                        Customer 33 enters the general section. there are 7 customers looking at general groceries.
+
+Customer 44 enters the system
+                Customer 37 enters the produce section. there are 20 customers looking at produce
+        Customer 44 enters the waiting area and is waiting to enter the grocery store. there are 5 customers waiting
+
+Customer 4 enters the system
+        Customer 4 enters the waiting area and is waiting to enter the grocery store. there are 6 customers waiting
+                PRODUCE has 20 out of 20 people. customer 4 WILL RETURN in 2 seconds
+                PRODUCE has 20 out of 20 people. customer 44 WILL RETURN in 2 seconds
+                        Customer 10 enters the general section. there are 8 customers looking at general groceries.
+
+Customer 42 enters the system
+        Customer 42 enters the waiting area and is waiting to enter the grocery store. there are 7 customers waiting
+                Customer 42 enters the produce section. there are 20 customers looking at produce
+
+Customer 22 enters the system
+        Customer 22 enters the waiting area and is waiting to enter the grocery store. there are 7 customers waiting
+                PRODUCE has 20 out of 20 people. customer 22 WILL RETURN in 2 seconds
+
+Customer 35 enters the system
+        Customer 35 enters the waiting area and is waiting to enter the grocery store. there are 8 customers waiting
+                PRODUCE has 20 out of 20 people. customer 35 WILL RETURN in 2 seconds
+
+Customer 27 enters the system
+        Customer 27 enters the waiting area and is waiting to enter the grocery store. there are 9 customers waiting
+                PRODUCE has 20 out of 20 people. customer 27 WILL RETURN in 2 seconds
+
+Customer 5 enters the system
+        Customer 5 enters the waiting area and is waiting to enter the grocery store. there are 10 customers waiting
+                PRODUCE has 20 out of 20 people. customer 5 WILL RETURN in 2 seconds
+
+Customer 2 enters the system
+        Customer 2 enters the waiting area and is waiting to enter the grocery store. there are 11 customers waiting
+                PRODUCE has 20 out of 20 people. customer 2 WILL RETURN in 2 seconds
+
+Customer 48 enters the system
+        Customer 48 enters the waiting area and is waiting to enter the grocery store. there are 12 customers waiting
+                PRODUCE has 20 out of 20 people. customer 48 WILL RETURN in 2 seconds
+
+Customer 0 enters the system
+        Customer 0 enters the waiting area and is waiting to enter the grocery store. there are 13 customers waiting
+                PRODUCE has 20 out of 20 people. customer 0 WILL RETURN in 2 seconds
+                                Customer 6 enters the frozen section. there are 1 customers looking at frozen foods.
+
+Customer 34 enters the system
+        Customer 34 enters the waiting area and is waiting to enter the grocery store. there are 14 customers waiting
+                PRODUCE has 20 out of 20 people. customer 34 WILL RETURN in 2 seconds
+
+Customer 20 enters the system
+        Customer 20 enters the waiting area and is waiting to enter the grocery store. there are 15 customers waiting
+                PRODUCE has 20 out of 20 people. customer 20 WILL RETURN in 2 seconds
+                        Customer 45 enters the general section. there are 8 customers looking at general groceries.
+                        Customer 9 enters the general section. there are 9 customers looking at general groceries.
+                        Customer 49 enters the general section. there are 10 customers looking at general groceries.
+
+Customer 13 enters the system
+        Customer 13 enters the waiting area and is waiting to enter the grocery store. there are 16 customers waiting
+                Customer 13 enters the produce section. there are 18 customers looking at produce
+
+Customer 17 enters the system
+        Customer 17 enters the waiting area and is waiting to enter the grocery store. there are 16 customers waiting
+                Customer 17 enters the produce section. there are 19 customers looking at produce
+
+Customer 18 enters the system
+        Customer 18 enters the waiting area and is waiting to enter the grocery store. there are 16 customers waiting
+                Customer 18 enters the produce section. there are 20 customers looking at produce
+
+Customer 26 enters the system
+        Customer 26 enters the waiting area and is waiting to enter the grocery store. there are 16 customers waiting
+                PRODUCE has 20 out of 20 people. customer 26 WILL RETURN in 2 seconds
+
+Customer 43 enters the system
+        Customer 43 enters the waiting area and is waiting to enter the grocery store. there are 17 customers waiting
+                PRODUCE has 20 out of 20 people. customer 43 WILL RETURN in 2 seconds
+                        Customer 23 enters the general section. there are 11 customers looking at general groceries.
+
+Customer 29 enters the system
+        Customer 29 enters the waiting area and is waiting to enter the grocery store. there are 18 customers waiting
+                Customer 29 enters the produce section. there are 20 customers looking at produce
+
+Customer 39 enters the system
+        Customer 39 enters the waiting area and is waiting to enter the grocery store. there are 18 customers waiting
+                PRODUCE has 20 out of 20 people. customer 39 WILL RETURN in 2 seconds
+                        Customer 19 enters the general section. there are 12 customers looking at general groceries.
+                        Customer 8 enters the general section. there are 13 customers looking at general groceries.
+                        Customer 46 enters the general section. there are 14 customers looking at general groceries.
+                        Customer 11 enters the general section. there are 15 customers looking at general groceries.
+                        Customer 1 enters the general section. there are 16 customers looking at general groceries.
+                                Customer 33 enters the frozen section. there are 2 customers looking at frozen foods.
+                        Customer 31 enters the general section. there are 16 customers looking at general groceries.
+                                Customer 46 enters the frozen section. there are 3 customers looking at frozen foods.
+                        Customer 42 enters the general section. there are 16 customers looking at general groceries.
+                        Customer 16 enters the general section. there are 17 customers looking at general groceries.
+                        Customer 41 enters the general section. there are 18 customers looking at general groceries.
+                                Customer 11 enters the frozen section. there are 4 customers looking at frozen foods.
+                        Customer 21 enters the general section. there are 18 customers looking at general groceries.
+                                Customer 1 enters the frozen section. there are 5 customers looking at frozen foods.
+                                Customer 32 enters the frozen section. there are 6 customers looking at frozen foods.
+                                Customer 31 enters the frozen section. there are 7 customers looking at frozen foods.
+                        Customer 14 enters the general section. there are 16 customers looking at general groceries.
+                        Customer 36 enters the general section. there are 17 customers looking at general groceries.
+                                Customer 19 enters the frozen section. there are 8 customers looking at frozen foods.
+                        Customer 15 enters the general section. there are 17 customers looking at general groceries.
+                                Customer 8 enters the frozen section. there are 9 customers looking at frozen foods.
+                        Customer 38 enters the general section. there are 17 customers looking at general groceries.
+                        Customer 29 enters the general section. there are 18 customers looking at general groceries.
+                                Customer 3 enters the frozen section. there are 10 customers looking at frozen foods.
+                                Customer 40 enters the frozen section. there are 11 customers looking at frozen foods.
+                        Customer 17 enters the general section. there are 17 customers looking at general groceries.
+                        Customer 7 enters the general section. there are 18 customers looking at general groceries.
+                                Customer 49 enters the frozen section. there are 12 customers looking at frozen foods.
+                                Customer 1 enters CHECKOUT AREA. there are 1 customers checking out.
+                                Customer 9 enters the frozen section. there are 12 customers looking at frozen foods.
+                                Customer 8 enters CHECKOUT AREA. there are 2 customers checking out.
+                        Customer 37 enters the general section. there are 17 customers looking at general groceries.
+                Customer 47 enters the produce section. there are 3 customers looking at produce
+                Customer 24 enters the produce section. there are 4 customers looking at produce
+                Customer 30 enters the produce section. there are 5 customers looking at produce
+                                Customer 28 enters the frozen section. there are 12 customers looking at frozen foods.
+                                Customer 37 enters the frozen section. there are 13 customers looking at frozen foods.
+                                Customer 46 enters CHECKOUT AREA. there are 3 customers checking out.
+                        Customer 18 enters the general section. there are 16 customers looking at general groceries.
+                                Customer 10 enters the frozen section. there are 13 customers looking at frozen foods.
+                Customer 25 enters the produce section. there are 5 customers looking at produce
+                Customer 4 enters the produce section. there are 6 customers looking at produce
+                Customer 44 enters the produce section. there are 7 customers looking at produce
+                                Customer 12 enters the frozen section. there are 14 customers looking at frozen foods.
+                                Customer 42 enters the frozen section. there are 15 customers looking at frozen foods.
+                        Customer 13 enters the general section. there are 14 customers looking at general groceries.
+                                Customer 29 enters the frozen section. there are 16 customers looking at frozen foods.
+                Customer 48 enters the produce section. there are 7 customers looking at produce
+                Customer 22 enters the produce section. there are 8 customers looking at produce
+                Customer 35 enters the produce section. there are 9 customers looking at produce
+                Customer 27 enters the produce section. there are 10 customers looking at produce
+                Customer 2 enters the produce section. there are 11 customers looking at produce
+                Customer 5 enters the produce section. there are 12 customers looking at produce
+                Customer 0 enters the produce section. there are 13 customers looking at produce
+                        Customer 0 enters the general section. there are 14 customers looking at general groceries.
+                Customer 34 enters the produce section. there are 13 customers looking at produce
+                Customer 20 enters the produce section. there are 14 customers looking at produce
+                Customer 26 enters the produce section. there are 15 customers looking at produce
+                Customer 43 enters the produce section. there are 16 customers looking at produce
+                                Customer 23 enters the frozen section. there are 17 customers looking at frozen foods.
+                        Customer 5 enters the general section. there are 14 customers looking at general groceries.
+                Customer 39 enters the produce section. there are 16 customers looking at produce
+                        Customer 34 enters the general section. there are 15 customers looking at general groceries.
+                                         Customer 1 exits the system.
+                                Customer 42 enters CHECKOUT AREA. there are 3 customers checking out.
+                        Customer 4 enters the general section. there are 16 customers looking at general groceries.
+                        Customer 44 enters the general section. there are 17 customers looking at general groceries.
+                                Customer 49 enters CHECKOUT AREA. there are 4 customers checking out.
+                        Customer 27 enters the general section. there are 18 customers looking at general groceries.
+                        Customer 39 enters the general section. there are 19 customers looking at general groceries.
+                                Customer 21 enters the frozen section. there are 16 customers looking at frozen foods.
+                                Customer 16 enters the frozen section. there are 17 customers looking at frozen foods.
+                                Customer 38 enters the frozen section. there are 18 customers looking at frozen foods.
+                        Customer 22 enters the general section. there are 17 customers looking at general groceries.
+                        Customer 43 enters the general section. there are 18 customers looking at general groceries.
+                        Customer 25 enters the general section. there are 19 customers looking at general groceries.
+                                Customer 33 enters CHECKOUT AREA. there are 5 customers checking out.
+                                         Customer 46 exits the system.
+                        Customer 26 enters the general section. there are 20 customers looking at general groceries.
+                                Customer 17 enters the frozen section. there are 18 customers looking at frozen foods.
+                                Customer 45 enters the frozen section. there are 19 customers looking at frozen foods.
+                        Customer 35 enters the general section. there are 19 customers looking at general groceries.
+                        Customer 2 enters the general section. there are 20 customers looking at general groceries.
+                                Customer 2 enters the frozen section. there are 20 customers looking at frozen foods.
+                        Customer 47 enters the general section. there are 20 customers looking at general groceries.
+                                Customer 15 enters the frozen section. there are 21 customers looking at frozen foods.
+                                Customer 40 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 7 enters the frozen section. there are 21 customers looking at frozen foods.
+                                Customer 5 enters the frozen section. there are 22 customers looking at frozen foods.
+                        Customer 24 enters the general section. there are 18 customers looking at general groceries.
+                                Customer 41 enters the frozen section. there are 23 customers looking at frozen foods.
+                                Customer 47 enters the frozen section. there are 24 customers looking at frozen foods.
+                        Customer 30 enters the general section. there are 17 customers looking at general groceries.
+                                Customer 25 enters the frozen section. there are 25 customers looking at frozen foods.
+                                         Customer 8 exits the system.
+                                Customer 36 enters the frozen section. there are 26 customers looking at frozen foods.
+                                Customer 9 enters CHECKOUT AREA. there are 5 customers checking out.
+                                         Customer 9 exits the system.
+                                         Customer 49 exits the system.
+                        Customer 48 enters the general section. there are 16 customers looking at general groceries.
+                                Customer 17 enters CHECKOUT AREA. there are 4 customers checking out.
+                                Customer 34 enters the frozen section. there are 25 customers looking at frozen foods.
+                        Customer 20 enters the general section. there are 16 customers looking at general groceries.
+                                Customer 5 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 30 enters the frozen section. there are 25 customers looking at frozen foods.
+                                         Customer 33 exits the system.
+                                Customer 37 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 6 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 14 enters the frozen section. there are 24 customers looking at frozen foods.
+                                Customer 18 enters the frozen section. there are 25 customers looking at frozen foods.
+                                Customer 22 enters the frozen section. there are 26 customers looking at frozen foods.
+                                Customer 44 enters the frozen section. there are 27 customers looking at frozen foods.
+                                Customer 16 enters CHECKOUT AREA. there are 7 customers checking out.
+                                Customer 36 enters CHECKOUT AREA. there are 8 customers checking out.
+                                Customer 39 enters the frozen section. there are 26 customers looking at frozen foods.
+                                Customer 48 enters the frozen section. there are 27 customers looking at frozen foods.
+                                         Customer 37 exits the system.
+                                         Customer 40 exits the system.
+                                         Customer 42 exits the system.
+                                Customer 13 enters the frozen section. there are 28 customers looking at frozen foods.
+                                Customer 20 enters the frozen section. there are 29 customers looking at frozen foods.
+                                Customer 19 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 27 enters the frozen section. there are 29 customers looking at frozen foods.
+                                Customer 11 enters CHECKOUT AREA. there are 7 customers checking out.
+                                         Customer 5 exits the system.
+                                         Customer 6 exits the system.
+                                Customer 47 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 26 enters the frozen section. there are 28 customers looking at frozen foods.
+                                         Customer 36 exits the system.
+                                Customer 43 enters the frozen section. there are 29 customers looking at frozen foods.
+                                Customer 0 enters the frozen section. there are 30 customers looking at frozen foods.
+                                Customer 45 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 35 enters the frozen section. there are 30 customers looking at frozen foods.
+                                Customer 14 enters CHECKOUT AREA. there are 7 customers checking out.
+                                Customer 4 enters the frozen section. there are 30 customers looking at frozen foods.
+                                Customer 2 enters CHECKOUT AREA. there are 8 customers checking out.
+                                Customer 29 enters CHECKOUT AREA. there are 9 customers checking out.
+                                         Customer 17 exits the system.
+                                         Customer 16 exits the system.
+                                         Customer 2 exits the system.
+                                Customer 24 enters the frozen section. there are 29 customers looking at frozen foods.
+                                Customer 26 enters CHECKOUT AREA. there are 7 customers checking out.
+                                Customer 35 enters CHECKOUT AREA. there are 8 customers checking out.
+                                Customer 22 enters CHECKOUT AREA. there are 9 customers checking out.
+                                         Customer 45 exits the system.
+                                         Customer 29 exits the system.
+                                         Customer 19 exits the system.
+                                         Customer 47 exits the system.
+                                Customer 31 enters CHECKOUT AREA. there are 6 customers checking out.
+                                         Customer 11 exits the system.
+                                         Customer 22 exits the system.
+                                Customer 32 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 13 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 48 enters CHECKOUT AREA. there are 7 customers checking out.
+                                Customer 25 enters CHECKOUT AREA. there are 8 customers checking out.
+                                Customer 7 enters CHECKOUT AREA. there are 9 customers checking out.
+                                Customer 12 enters CHECKOUT AREA. there are 10 customers checking out.
+                                         Customer 14 exits the system.
+                                Customer 3 enters CHECKOUT AREA. there are 10 customers checking out.
+                REGISTERS has 10 out of 10 people. customer 43 WILL RETURN in 2 seconds
+                REGISTERS has 10 out of 10 people. customer 38 WILL RETURN in 2 seconds
+                                         Customer 7 exits the system.
+                                Customer 10 enters CHECKOUT AREA. there are 10 customers checking out.
+                                         Customer 35 exits the system.
+                                         Customer 26 exits the system.
+                                Customer 44 enters CHECKOUT AREA. there are 9 customers checking out.
+                                         Customer 31 exits the system.
+                                         Customer 13 exits the system.
+                                Customer 28 enters CHECKOUT AREA. there are 8 customers checking out.
+                                         Customer 32 exits the system.
+                                         Customer 3 exits the system.
+                                         Customer 10 exits the system.
+                                         Customer 48 exits the system.
+                                         Customer 12 exits the system.
+                                Customer 41 enters CHECKOUT AREA. there are 4 customers checking out.
+                                Customer 23 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 21 enters CHECKOUT AREA. there are 6 customers checking out.
+                                         Customer 21 exits the system.
+                                         Customer 23 exits the system.
+                                Customer 15 enters CHECKOUT AREA. there are 5 customers checking out.
+                                         Customer 28 exits the system.
+                                         Customer 44 exits the system.
+                                         Customer 25 exits the system.
+                                Customer 34 enters CHECKOUT AREA. there are 3 customers checking out.
+                                Customer 27 enters CHECKOUT AREA. there are 4 customers checking out.
+                                Customer 18 enters CHECKOUT AREA. there are 5 customers checking out.
+                                Customer 43 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 39 enters CHECKOUT AREA. there are 7 customers checking out.
+                                Customer 38 enters CHECKOUT AREA. there are 8 customers checking out.
+                                         Customer 34 exits the system.
+                                         Customer 15 exits the system.
+                                         Customer 27 exits the system.
+                                Customer 30 enters CHECKOUT AREA. there are 6 customers checking out.
+                                         Customer 41 exits the system.
+                                Customer 20 enters CHECKOUT AREA. there are 6 customers checking out.
+                                         Customer 30 exits the system.
+                                Customer 4 enters CHECKOUT AREA. there are 6 customers checking out.
+                                Customer 24 enters CHECKOUT AREA. there are 7 customers checking out.
+                                         Customer 39 exits the system.
+                                Customer 0 enters CHECKOUT AREA. there are 7 customers checking out.
+                                         Customer 18 exits the system.
+                                         Customer 43 exits the system.
+                                         Customer 4 exits the system.
+                                         Customer 24 exits the system.
+                                         Customer 38 exits the system.
+                                         Customer 20 exits the system.
+                                         Customer 0 exits the system.
